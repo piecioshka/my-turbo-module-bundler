@@ -15,18 +15,6 @@
                 "${workspaceFolder}/test/specs/"
             ],
             "internalConsoleOptions": "openOnSessionStart"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "End-to-end tests",
-            "program": "${workspaceFolder}/node_modules/.bin/jest",
-            "args": [
-                "--colors",
-                "--rootDir",
-                "${workspaceFolder}/e2e/specs/"
-            ],
-            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }
