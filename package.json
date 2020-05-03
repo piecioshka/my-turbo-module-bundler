@@ -1,0 +1,45 @@
+{
+    "private": true,
+    "name": "my-turbo-module-bundler",
+    "description": "My Turbo Module Bundler",
+    "version": "0.0.0",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "https://piecioshka.pl/"
+    },
+    "scripts": {
+        "clear": "rm -rf dist/ coverage/ .nyc_output/",
+        "clear:all": "rm -rf node_modules/ && npm run clear",
+        "test": "jest --rootDir test/specs/",
+        "test:watch": "npm run test -- --watch",
+        "start": "node index.js",
+        "coverage": "npm run test -- --coverage",
+        "coveralls": "npm run coverage -- --coverageReporters=text-lcov | coveralls -v",
+        "lint": "eslint .",
+        "version": "npm run build && git add dist/",
+        "postversion": "git push --tags",
+        "predeploy": "npm version patch && git push && git push --tags",
+        "deploy": ""
+    },
+    "dependencies": {
+        "yargs": "^15.3.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^25.2.1",
+        "eslint": "^6.8.0",
+        "eslint-config-piecioshka": "^2.0.2",
+        "jest": "^25.5.4",
+        "webpack": "^4.43.0",
+        "webpack-cli": "^3.3.11"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:piecioshka/my-turbo-module-bundler.git"
+    },
+    "engines": {
+        "node": ">=8"
+    },
+    "bin": "./bin/cli.js"
+}
