@@ -16,10 +16,11 @@ Create my module bundle to know how bundling works.
 
 ## Features
 
-* :white_check_mark: Bundling multiple files using CommonJS
+* :white_check_mark: Bundling multiple files using CommonJS Modules
+* :white_check_mark: Integration with CI: GitHub Actions, Travis Ci, Circle Ci
+* :warning: Unit tests
+    + :white_check_mark: Create bundle file with proper context
 * :no_entry: Use AST to process module content instead of Regular Expression
-* :no_entry: Unit tests
-* :no_entry: Integration with CI: GitHub Actions, Travis Ci, Circle Ci
 
 ## CLI
 

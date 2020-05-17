@@ -93,16 +93,26 @@ function buildBundleFile(entryFile, outputFile) {
         .map((key) => template(key, modules[key]))
         .join(',');
     bundleContent = preambule(entryFile).trim()
-         + bundleContent + postambule();
-    fs.writeFile(outputFile, bundleContent);
+        + bundleContent + postambule();
+    return fs.writeFile(outputFile, bundleContent);
 }
 
+/**
+ * @typedef BundleSettings
+ * @property {string} entry
+ * @property {string} output
+ */
+
+/**
+ * @param {BundleSettings} config
+ * @returns {Promise}
+ */
 function bundle(config) {
     // console.log('my-turbo-module-bundler', config);
 
-    parseModule(config.entry)
+    return parseModule(config.entry)
         .then(() => {
-            buildBundleFile(config.entry, config.output);
+            return buildBundleFile(config.entry, config.output);
         })
         .catch((err) => {
             console.error(err.message);
