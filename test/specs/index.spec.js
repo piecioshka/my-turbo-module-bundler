@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs').promises;
+const del = require('del');
 const { bundle } = require('../../src/index');
 const { createFiles } = require('../helpers/create-file');
 
@@ -15,9 +16,7 @@ const fakeOutputFilename = path.join(fakeOutputPath, 'bundle.js');
 describe('Bundle', () => {
     afterEach(async () => {
         // Teardown
-        await fs.rmdir(fakeOutputPath, {
-            recursive: true
-        });
+        await del(fakeOutputPath);
     });
 
     it('should create bundle file for single entry file', async () => {
