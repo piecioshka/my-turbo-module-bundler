@@ -1,7 +1,7 @@
 # my-turbo-module-bundler
 
 [![github-ci](https://github.com/piecioshka/my-turbo-module-bundler/workflows/Testing/badge.svg?branch=master)](https://github.com/piecioshka/my-turbo-module-bundler/actions/)
-[![travis-ci](https://api.travis-ci.org/piecioshka/my-turbo-module-bundler.svg?branch=master)](https://travis-ci.org/piecioshka/my-turbo-module-bundler)
+[![travis-ci](https://api.travis-ci.com/piecioshka/my-turbo-module-bundler.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/my-turbo-module-bundler)
 [![circle-ci](https://circleci.com/gh/piecioshka/my-turbo-module-bundler.svg?style=svg)](https://circleci.com/gh/piecioshka/my-turbo-module-bundler)
 
 :hammer: My Turbo Module Bundler
