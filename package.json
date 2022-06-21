@@ -16,7 +16,6 @@
         "test:watch": "npm run test -- --watch",
         "start": "node index.js",
         "coverage": "npm run test -- --coverage",
-        "coveralls": "npm run coverage -- --coverageReporters=text-lcov | coveralls -v",
         "lint": "eslint .",
         "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d demo/"
     },
