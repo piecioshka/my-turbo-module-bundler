@@ -6,7 +6,7 @@
 
 :hammer: My Turbo Module Bundler
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/my-turbo-module-bundler>
 
