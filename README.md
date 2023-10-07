@@ -6,6 +6,8 @@
 
 :hammer: My Turbo Module Bundler
 
+> Give a ⭐️ if this project helped you!
+
 ## Preview 🎉
 
 <https://piecioshka.github.io/my-turbo-module-bundler>
@@ -47,10 +49,6 @@ npm run coverage
 
 Contributions, issues and feature requests are welcome!<br />
 Feel free to check [issues page](https://github.com/piecioshka/my-turbo-module-bundler/issues/).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
 
 ## License
 
