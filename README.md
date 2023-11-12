@@ -1,7 +1,6 @@
 # my-turbo-module-bundler
 
 [![github-ci](https://github.com/piecioshka/my-turbo-module-bundler/workflows/Testing/badge.svg?branch=master)](https://github.com/piecioshka/my-turbo-module-bundler/actions/)
-[![travis-ci](https://api.travis-ci.com/piecioshka/my-turbo-module-bundler.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/my-turbo-module-bundler)
 [![circle-ci](https://circleci.com/gh/piecioshka/my-turbo-module-bundler.svg?style=svg)](https://circleci.com/gh/piecioshka/my-turbo-module-bundler)
 
 :hammer: My Turbo Module Bundler
@@ -19,7 +18,7 @@ Create my module bundle to know how bundling works.
 ## Features
 
 * :white_check_mark: Bundling multiple files using CommonJS Modules
-* :white_check_mark: Integration with CI: GitHub Actions, Travis Ci, Circle Ci
+* :white_check_mark: Integration with CI: GitHub Actions, Circle Ci
 * :warning: Unit tests
     + :white_check_mark: Create bundle file with proper context
 * :no_entry: Use AST to process module content instead of Regular Expression
