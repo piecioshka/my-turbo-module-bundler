@@ -22,7 +22,7 @@ const argv = yargs
         return void yargs.showHelp();
     }
 
-    const entry = path.resolve(entryArg);
+    const entry = path.resolve(String(entryArg));
     const output = argv.o || `${process.cwd()}/bundle.js`;
     bundle({ entry, output });
 })();

@@ -1,9 +1,8 @@
 # my-turbo-module-bundler
 
 [![github-ci](https://github.com/piecioshka/my-turbo-module-bundler/workflows/Testing/badge.svg?branch=master)](https://github.com/piecioshka/my-turbo-module-bundler/actions/)
-[![circle-ci](https://circleci.com/gh/piecioshka/my-turbo-module-bundler.svg?style=svg)](https://circleci.com/gh/piecioshka/my-turbo-module-bundler)
 
-:hammer: My Turbo Module Bundler
+🔨 My Turbo Module Bundler
 
 > Give a ⭐️ if this project helped you!
 
@@ -17,11 +16,11 @@ Create my module bundle to know how bundling works.
 
 ## Features
 
-* :white_check_mark: Bundling multiple files using CommonJS Modules
-* :white_check_mark: Integration with CI: GitHub Actions, Circle Ci
-* :warning: Unit tests
-    + :white_check_mark: Create bundle file with proper context
-* :no_entry: Use AST to process module content instead of Regular Expression
+- ✅ Bundling multiple files using CommonJS Modules
+- ✅ Integration with CI: GitHub Actions
+- ⚠️ Unit tests
+    - ✅ Create bundle file with proper context
+- ⛔ Use AST to process module content instead of Regular Expression
 
 ## CLI
 
@@ -51,4 +50,4 @@ Feel free to check [issues page](https://github.com/piecioshka/my-turbo-module-b
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2020
+[The MIT License](https://piecioshka.mit-license.org) @ 2020
