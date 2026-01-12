@@ -4,4 +4,6 @@ npm-debug.log
 coverage/
 dist/
 
+test-output*.js
+
 !.vscode/

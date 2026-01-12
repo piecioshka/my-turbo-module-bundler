@@ -20,7 +20,7 @@
         "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d demo/"
     },
     "dependencies": {
-        "yargs": "^17.3.1"
+        "minimist": "^1.2.8"
     },
     "devDependencies": {
         "@types/jest": "^27.4.0",
