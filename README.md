@@ -1,6 +1,6 @@
 # my-turbo-module-bundler
 
-[![github-ci](https://github.com/piecioshka/my-turbo-module-bundler/workflows/Testing/badge.svg?branch=master)](https://github.com/piecioshka/my-turbo-module-bundler/actions/)
+[![github-ci](https://github.com/piecioshka/my-turbo-module-bundler/workflows/Testing/badge.svg?branch=main)](https://github.com/piecioshka/my-turbo-module-bundler/actions/)
 
 🔨 My Turbo Module Bundler
 
