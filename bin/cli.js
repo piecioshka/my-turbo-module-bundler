@@ -10,7 +10,7 @@ const { bundle } = require('../src/index');
 function showHelp() {
     console.log(`my-turbo-module-bundler
 
-  > cli.js main.js [-o bundle.js]
+  > my-turbo-module-bundler main.js [-o bundle.js]
 
 Options:
       --help     Show help                                             [boolean]
@@ -40,6 +40,6 @@ const argv = minimist(process.argv.slice(2), {
     }
 
     const entry = path.resolve(String(entryArg));
-    const output = argv.o || `${process.cwd()}/bundle.js`;
+    const output = argv.output || `${process.cwd()}/bundle.js`;
     bundle({ entry, output });
 })();
