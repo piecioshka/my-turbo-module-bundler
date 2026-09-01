@@ -78,7 +78,7 @@ function template(moduleFilename, content) {
         .replace(regexp, (_, moduleName) => {
             return ` __require__("${buildModulePath(moduleFilename, moduleName)}")`;
         })
-        .replace(/\n/mg, '\n');
+        .replace(/\n/mg, '\\n');
     return `
     "${moduleFilename}": function (module, __require__) {
         eval(\`${compiledContent}\`)
