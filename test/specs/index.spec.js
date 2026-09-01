@@ -76,4 +76,29 @@ describe('Bundle', () => {
         // Then
         expect(await fs.readFile(fakeOutputFilename, 'utf-8')).toContain('ciasteczko');
     });
+
+    it('should escape newlines in embedded module content', async () => {
+        // Given
+        await createFiles(fakeOutputPath, {
+            'main.js': `
+                function main() {
+                    console.log('hello world');
+                }
+                main();
+            `
+        });
+
+        // When
+        await bundle({
+            entry: fakeEntryFilename,
+            output: fakeOutputFilename
+        });
+
+        // Then
+        const bundleContent = await fs.readFile(fakeOutputFilename, 'utf-8');
+        const moduleBlock = bundleContent.match(/eval\(`([\s\S]*?)`\)/)[1];
+
+        expect(moduleBlock).toContain('\\n');
+        expect(moduleBlock).not.toContain('\n');
+    });
 });
