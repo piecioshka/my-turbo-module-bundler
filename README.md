@@ -1,5 +1,11 @@
 # my-turbo-module-bundler
 
+<!-- prettier-ignore-start -->
+
+[![github-ci](https://github.com/piecioshka/my-turbo-module-bundler/actions/workflows/ci.yml/badge.svg)](https://github.com/piecioshka/my-turbo-module-bundler/actions/workflows/ci.yml)
+
+<!-- prettier-ignore-end -->
+
 [![github-ci](https://github.com/piecioshka/my-turbo-module-bundler/workflows/Testing/badge.svg?branch=main)](https://github.com/piecioshka/my-turbo-module-bundler/actions/)
 
 🔨 My Turbo Module Bundler
