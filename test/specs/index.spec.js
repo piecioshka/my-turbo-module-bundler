@@ -38,7 +38,7 @@ describe('Bundle', () => {
     it('should create bundle file with source file content', async () => {
         // Given
         await createFiles(fakeOutputPath, {
-            'main.js': `
+            [path.basename(fakeEntryFilename)]: `
                 function main() {
                     console.log('hello world');
                 }
@@ -96,7 +96,11 @@ describe('Bundle', () => {
 
         // Then
         const bundleContent = await fs.readFile(fakeOutputFilename, 'utf-8');
-        const moduleBlock = bundleContent.match(/eval\(`([\s\S]*?)`\)/)[1];
+        const match = bundleContent.match(/eval\(`([\s\S]*?)`\)/);
+
+        expect(match).not.toBeNull();
+
+        const moduleBlock = match[1];
 
         expect(moduleBlock).toContain('\\n');
         expect(moduleBlock).not.toContain('\n');
